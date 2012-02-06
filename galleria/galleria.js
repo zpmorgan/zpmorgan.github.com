@@ -885,7 +885,7 @@ var undef,
                 Utils.animate(params.next, {
                     opacity: 1
                 },{
-                    duration: params.speed,
+                    duration: 0, //params.speed,
                     complete: complete
                 });
                 if (params.prev) {
