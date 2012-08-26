@@ -1,0 +1,24 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[margin=.05in,papersize={2.75in,1.1in}]{geometry}
+\begin{document}
+
+
+\renewcommand\arraystretch{0}
+\renewcommand\tabcolsep{0pt}
+
+% http://stackoverflow.com/questions/1357798/how-to-center-cell-contents-of-a-latex-table-whose-columns-have-fixed-widths
+\begin{table}
+\begin{tabular}{p{1in} | >{\centering\arraybackslash}m{1.65in} |}
+\hline%        qr & unique key \\  \\ ff \\
+\includegraphics[width=1in,height=1in]{600px-QR_code_Wikimedia_Commons_(URL).png} 
+& unique key a 
+\\ \hline
+\end{tabular}
+\end{table}
+
+
+\end{document}
+
